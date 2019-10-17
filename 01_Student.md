@@ -138,3 +138,37 @@ public class Test1 {
 }
 
 ````
+````java
+
+
+public class Test1 {
+
+	public static void main(String[] args) {
+	/*重写：在派生类中重写基类继承下来的方法，要求方法原型相同。
+	 * 一个派生类对象可以看作一个基类对象。
+	 */
+		Student s = new Student();
+		s.print();
+		
+		CollegeStudent c = new CollegeStudent();
+		c.print();
+		
+		Student s0 = new CollegeStudent();//向上转型，理解很重要，多态的大前提。（动态）
+		/*初始化的派生类对象赋给了一个引用 */ //s0与s的方法一样
+		 //1. 可以调用基类继承下来的方法
+		 s0.setName("lisi");
+		 s0.getName();
+		 //2. 不能调用派生类新增的方法。
+		 //s0.getMajor();
+		 //3. 派生类中重写的方法，可以调用。
+		  s0.print(); 		  
+	}
+	
+	
+}
+````
+````java
+
+
+
+
