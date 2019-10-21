@@ -14,8 +14,7 @@ public interface Comparable {
 }
 ````
 ### Dog类
-`````java
-
+````java
 //public class Dog extends Animal {
 //
 //	@Override
